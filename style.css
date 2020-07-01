@@ -1,0 +1,41 @@
+body{
+    background-color: wheat;
+    color: brown;
+    text-align: center;
+}
+
+form{
+    position: fixed;
+    width: 500px;
+    text-align: left;
+    margin-left: 30%;
+}
+
+#name{
+    width: 72%;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid lightblue;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+#email, #age{
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+#inner_div{
+    display: flex;
+    flex-direction: row;
+}
+
+#email{
+    border: 2px solid green;
+}
+
+#age{
+    border: 2px solid orange;
+}
