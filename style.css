@@ -1,41 +1,13 @@
-body{
-    background-color: wheat;
-    color: brown;
+div{
     text-align: center;
 }
 
-form{
-    position: fixed;
-    width: 500px;
-    text-align: left;
-    margin-left: 30%;
+img{
+    width: 90%;
+    border-radius: 30%;
 }
 
-#name{
-    width: 72%;
-    height: 30px;
-    border-radius: 10px;
-    border: 2px solid lightblue;
-    padding-left: 5px;
-    margin-bottom: 10px;
-}
-
-#email, #age{
-    width: 70%;
-    height: 30px;
-    border-radius: 10px;
-    padding-left: 5px;
-}
-
-#inner_div{
-    display: flex;
-    flex-direction: row;
-}
-
-#email{
-    border: 2px solid green;
-}
-
-#age{
-    border: 2px solid orange;
+.mine{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
 }
