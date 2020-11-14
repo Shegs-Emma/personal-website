@@ -8,17 +8,21 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Sansita+Swashed:wght@500&family=Sigmar+One&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Montserrat+Alternates&family=Sansita+Swashed:wght@500&family=Sigmar+One&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark myNav">
         <a class="navbar-brand" href="#" id="brand">EmmyM_ighty</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,14 +32,17 @@
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link active" href="#about">About</a>
+                <a class="nav-item nav-link active" href="#myProjects" tabindex="-1" aria-disabled="true">Project</a>
                 <a class="nav-item nav-link active" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
             </div>
         </div>
     </nav>
 
     <div class="container mt-5 mb-5">
-        <div class="row mb-5">
-            <div class="col-8" id="intro">
+        <div class="row mb-5" id="introDiv" data-aos="fade-up" data-aos-offset="200" data-aos-delay="500"
+            data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+            data-aos-anchor-placement="top-center">
+            <div class="col-md-8" id="intro">
                 <h1>
                     Hello! I'm <br />
                     <span>
@@ -44,87 +51,233 @@
                     </span>
                 </h1>
                 <h3>
-                    I'm a software engineer based in Lagos, Nigeria. I specialize in building responsive, exceptional,
+                    I'm a software engineer based in Lagos, Nigeria. <br /> I specialize in building responsive,
+                    exceptional,
                     high-quality websites and applications.
                 </h3>
                 <a href="#contact" class="btn btn-outline-info btn-lg">Get in Touch</a>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 mt-5">
                 <img id="image" src="imgs/emma1.jpg" />
             </div>
         </div>
 
         <!-- ===============================================The About Me Section==================================================== -->
 
-        <div id="about">
-            <div class="container alert alert-info mt-1">
+        <div class="row" id="about" data-aos="fade-right" data-aos-delay="500"
+        data-aos-duration="1000">
+            <div class="col-md-7 about" >
                 <h1>ABOUT ME</h1>
-                <!-- <p>The Man... The Myth... The Legend (Upcoming sha. *winks*)</p> -->
+                <h5>
+                    Hello! I'm Emmanuel, a Full stack developer on the MERN stack. I enjoy thinking up solutions and
+                    making functionalities
+                    reach implementation. I absolutely love working in a team with other creative minds.
+                </h5>
+
             </div>
 
-            <hr />
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6"><img src="imgs/emma.JPG" alt="my-foto" /></div>
-                    <div class="col-sm-12 col-md-6 mine">
-                        <p>
-                            <strong>Hi! I'm Oderemi Emmanuel.</strong> I am a software developer. I feel so proud to
-                            introduce myself with that line because
-                            i have always wanted to be a developer, and it took me too long to acheive this, but we
-                            thank
-                            the Lord.
-                        </p>
-                        <p>
-                            <strong>Alright,</strong> I am a native of Ogun State, but i was born and brought up in
-                            Lagos,
-                            so definitely i have never been
-                            to my ancentral home before, but i hear Abeokuta people are warriors, which explains how
-                            fantabulous i am in
-                            Call of Duty games. I am first of 3 4 children. I am a graduate of Lagos state university,
-                            ojo.
-                            I have a BSc in
-                            Computer Science. I know what you are thinking.. Yes! You are right, we were taught next to
-                            nothing, the 4 years
-                            was majorly a waste of my life span because everything i learnt was on my own. I never had a
-                            mentor, so i spent
-                            too many years learning.
-                        </p>
-                        <p>
-                            <strong>I have always been a master of HTML, CSS, Bootstrap, but i wanted more.</strong> I
-                            finally discovered Udemy in 2019, and i have
-                            taken up to 5 courses there. I started as a full stack developer with node. I actually have
-                            created a Database application
-                            using Nodejs. Early this year i completed my React course. I can proudly say i LOVE REACT! I
-                            have an application which is
-                            nearing completion though. I decided to take the Stutern course because i haven't worked
-                            much in
-                            a team, and i want to
-                            feel that and learn from people.
-                        </p>
-                        <p>
-                            <strong>Back to my life!</strong> I am not a shy person, but i hate being in the spot light,
-                            i
-                            prefer to be in the background. I love anime,
-                            I love gaming, I love music, I love movies. BEST OF ALL, I love to write code!
-                        </p>
-                        <p>
-                            <Strong>Well</Strong>, this is Emmanuel! I hope i didn't bore you to death. This is just my
-                            Ninja Way!
-                        </p>
+            <div class="col-md-5 about">
+                <h3>Core Technologies</h3>
+                <h5>
+                    Javascript/ES6+ <br />
+                    ReactJs <br />
+                    Redux <br />
+                    HTML/(S)CSS <br />
+                    Git/Git Workflows <br />
+                    Agile Methodologies
+                </h5>
+
+                <h3>Other Technologies</h3>
+                <h5>
+                    Firebase<br />
+                    Node / Express <br />
+                    Heroku <br />
+                    jQuery <br />
+                    MySQL <br />
+                    PostgreSQL <br />
+                    MongoDB
+                </h5>
+            </div>
+        </div>
+
+        <!-- ===============================================Project section==================================================== -->
+        <h1 id="myProjects">Projects</h1>
+
+        <div class="row" id="project" data-aos="fade-left" data-aos-delay="500"
+        data-aos-duration="1000">
+
+            <div class="col-md-7 projectHead">
+
+                <img
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+            </div>
+
+            <div class="col-md-5 project">
+                <h4>Featured Project</h4>
+                <h3>Issue Tracker (Group Project)</h3>
+                <div id="desc">
+                    <h5>A little app for monitoring tasks to be completed.</h5>
+                </div>
+                <h6>HTML, CSS, Bootstrap, jQuery</h6>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"
+                        fill="whitesmoke">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-box-arrow-up-right" fill="whitesmoke"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                        <path fill-rule="evenodd"
+                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="row" id="project2" data-aos="fade-right" data-aos-delay="500"
+        data-aos-duration="1000">
+            <div class="col-md-5 project2">
+                <h4>Featured Project</h4>
+                <h3>Red Apron</h3>
+                <div id="desc2">
+                    <h5>An application for food lovers to share recipes</h5>
+                </div>
+                <h6>HTML, CSS, Bootstrap, jQuery, Firebase</h6>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"
+                        fill="whitesmoke">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-box-arrow-up-right" fill="whitesmoke"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                        <path fill-rule="evenodd"
+                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="col-md-7 projectHead">
+                <img
+                    src="https://images.unsplash.com/photo-1604622245449-5be82bd4c294?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+            </div>
+        </div>
+
+
+        <div class="row" id="project" data-aos="fade-left" data-aos-delay="500"
+        data-aos-duration="1000">
+            <div class="col-md-7 projectHead">
+                <img
+                    src="https://images.unsplash.com/photo-1506862265142-6821b7b8df2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+            </div>
+
+            <div class="col-md-5 project">
+                <h4>Featured Project</h4>
+                <h3>TOGAJ Photography App</h3>
+                <div id="desc">
+                    <h5>An app built to help photographers upload and share pictures.</h5>
+                </div>
+                <h6>HTML, CSS, Bootstrap, React, Node/Express, MongoDB</h6>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"
+                        fill="whitesmoke">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-box-arrow-up-right" fill="whitesmoke"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                        <path fill-rule="evenodd"
+                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
+        <h1 id="contact">Contact Me</h1>
+        <div class="row" id="contactMe" data-aos="flip-left" data-aos-delay="500"
+        data-aos-duration="1000">
+            <div class="col-md-7">
+                <h5>You can chat me up to discuss your project or just to say hi</h5>
+
+                <form>
+                    <div>
+                        <input type="text" placeholder="NAME" id="name" />
                     </div>
+                    <div>
+                        <input type="email" placeholder="EMAIL" id="email" />
+                    </div>
+                    <div>
+                        <textarea name="message" id="message" cols="1" rows="1" placeholder="MESSAGE"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn btn-outline-info btn-lg">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-5">
+                <div id="socials">
+                    <h1>Let's Connect</h1>
+                    <h5>Connect with me on social media</h5>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"
+                            fill="whitesmoke">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="whitesmoke">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="whitesmoke">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
-
-        <!-- ===============================================Contact section==================================================== -->
-
-        <div id="contact">
-            <div class="container alert alert-secondary">
-                <h1>My CV</h1>
-
-            </div>
-        </div>
     </div>
+
+    <footer>
+        <h5>
+            &copy; Emmanuel Oderemi 2020. All Rights Reserved
+        </h5>
+    </footer>
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
