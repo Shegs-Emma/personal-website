@@ -5,9 +5,9 @@ body{
 }
 
 .navbar {
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed; 
+    top: 0; 
+    width: 100%;
     z-index: 3;
 }
 
@@ -21,12 +21,13 @@ body{
 
 nav{
     -webkit-box-shadow:0px 1px 1px #111011;
-     -moz-box-shadow:0px 1px 1px #111011;
-     box-shadow:0px 2px 2px #111011;
+     -moz-box-shadow:0px 3px 3px #111011;
+     box-shadow:0px 4px 4px #111011;
 }
 
 h1, h3{
     font-family: 'Sigmar One', cursive;
+    color: #20A2B8;
 }
 
 h5{
@@ -55,7 +56,10 @@ h6 {
 }
 
 #image{
-    width: 100%;
+    width: 90%;
+    border: 5px solid rgb(109, 98, 98);
+    border-radius: 5px;
+    box-shadow:0px 6px 6px #0e0d0e;
 }
 
 div{
@@ -68,11 +72,12 @@ img{
 
 /* ============================================= Intro =========================================================== */
 #introDiv{
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 #intro h3{
-    font-family: 'Courgette', cursive;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: rgb(148, 142, 142);
 }
 
 #intro span{
@@ -82,6 +87,7 @@ img{
 /* =============================================== About =========================================*/
 #about{
     margin-bottom: 100px;
+    width: 100%;
 }
 
 /* =================================================== Project =========================================*/
@@ -300,6 +306,12 @@ footer h5{
         top: -300px;
         z-index: 1;
     }
+
+    .disappear{
+        width: 100%;
+        background-color: rgb(58, 53, 53);
+        opacity: 0.9;
+    }
 }
 
 
@@ -352,6 +364,12 @@ footer h5{
         top: 50px;
         text-align: left;
     }
+
+    .disappear{
+        width: 100%;
+        background-color: rgb(58, 53, 53);
+        opacity: 0.9;
+    }
 }
 
 /* Iphone 6/7/8 plus */
@@ -360,6 +378,16 @@ footer h5{
         position: relative;
         top: 50px;
         text-align: left;
+    }
+
+    h1, h3{
+        font-size: medium;
+    }
+
+    .disappear{
+        width: 100%;
+        background-color: rgb(58, 53, 53);
+        opacity: 0.9;
     }
 }
 
@@ -370,6 +398,26 @@ footer h5{
         top: 50px;
         text-align: left;
     }
+
+    #desc {
+        width: 100%;
+        position: relative;
+        right: 40%;
+        padding: 15px;
+    }
+
+    #desc2 {
+        width: 100%;
+        position: relative;
+        padding: 15px;
+        z-index: 2;
+    }
+
+    .disappear{
+        width: 100%;
+        background-color: rgb(58, 53, 53);
+        opacity: 0.9;
+    }
 }
 
 /* Iphone 5 */
@@ -379,6 +427,12 @@ footer h5{
         top: 50px;
         text-align: left;
     }
+
+    .disappear{
+        width: 100%;
+        background-color: rgb(58, 53, 53);
+        opacity: 0.9;
+    }
 }
 
 /* Galaxy S5 */
@@ -387,5 +441,11 @@ footer h5{
         position: relative;
         top: 50px;
         text-align: left;
+    }
+
+    .disappear{
+        width: 100%;
+        background-color: rgb(58, 53, 53);
+        opacity: 0.9;
     }
 }
