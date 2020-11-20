@@ -62,9 +62,8 @@
 
         <!-- ===============================================The About Me Section==================================================== -->
 
-        <div class="row" id="about" data-aos="fade-right" data-aos-delay="500"
-        data-aos-duration="1000">
-            <div class="col-md-7 about" >
+        <div class="row" id="about" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+            <div class="col-md-7 about">
                 <h1>ABOUT ME</h1>
                 <h5>
                     Hello! I'm Emmanuel, a Full stack developer on the MERN stack. I enjoy thinking up solutions and
@@ -101,8 +100,7 @@
         <!-- ===============================================Project section==================================================== -->
         <h1 id="myProjects">Projects</h1>
 
-        <div class="row" id="project" data-aos="fade-up" data-aos-delay="500"
-        data-aos-duration="1000">
+        <div class="row" id="project" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
 
             <div class="col-md-7 projectHead">
 
@@ -137,8 +135,7 @@
         </div>
 
 
-        <div class="row" id="project2" data-aos="fade-down" data-aos-delay="500"
-        data-aos-duration="1000">
+        <div class="row" id="project2" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
             <div class="col-md-5 project2 disappear">
                 <h4>Featured Project</h4>
                 <h3>Red Apron</h3>
@@ -171,8 +168,7 @@
         </div>
 
 
-        <div class="row" id="project" data-aos="fade-up" data-aos-delay="500"
-        data-aos-duration="1000">
+        <div class="row" id="project" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <div class="col-md-7 projectHead">
                 <img
                     src="https://images.unsplash.com/photo-1506241537529-eefea1fbe44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
@@ -206,17 +202,16 @@
 
 
         <h1 id="contact">Contact Me</h1>
-        <div class="row" id="contactMe" data-aos="flip-left" data-aos-delay="500"
-        data-aos-duration="1000">
+        <div class="row" id="contactMe" data-aos="flip-left" data-aos-delay="500" data-aos-duration="1000">
             <div class="col-md-7">
                 <h5>You can chat me up to discuss your project or just to say hi</h5>
 
-                <form>
+                <form id="myForm" action="https://formspree.io/f/mqkglojz" method="POST">
                     <div>
-                        <input type="text" placeholder="NAME" id="name" />
+                        <input type="text" name="name" placeholder="NAME" id="name" />
                     </div>
                     <div>
-                        <input type="email" placeholder="EMAIL" id="email" />
+                        <input type="email" name="_replyto" placeholder="EMAIL" id="email" />
                     </div>
                     <div>
                         <textarea name="message" id="message" cols="1" rows="1" placeholder="MESSAGE"></textarea>
@@ -274,6 +269,8 @@
         crossorigin="anonymous"></script>
 
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
     <script src="index.js"></script>
 </body>
