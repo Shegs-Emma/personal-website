@@ -190,13 +190,19 @@ form input, form textarea{
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom-style: groove;
     margin-bottom: 10%;
+    color: whitesmoke;
 }
 
 #contact{
     text-align: justify;
     margin-bottom: 50px;
+}
+
+form input:focus, form textarea:focus{
+    outline: none;
+    color: whitesmoke;
 }
 
 /* ======================================================= Footer ================================================================ */
