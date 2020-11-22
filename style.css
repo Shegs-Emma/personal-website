@@ -170,7 +170,7 @@ svg{
 #socials{
     background-color: #585558;
     padding: 10%;
-    margin-top: 10%;
+    margin-top: 20%;
     border-radius: 10px;
 }
 
@@ -190,7 +190,7 @@ form input, form textarea{
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom-style: groove;
+    border-bottom: 1px solid whitesmoke;
     margin-bottom: 10%;
     color: whitesmoke;
 }
@@ -203,6 +203,7 @@ form input, form textarea{
 form input:focus, form textarea:focus{
     outline: none;
     color: whitesmoke;
+    border-bottom: 1px solid #20A2B8;
 }
 
 /* ======================================================= Footer ================================================================ */

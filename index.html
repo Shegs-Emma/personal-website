@@ -206,15 +206,15 @@
             <div class="col-md-7">
                 <h5>You can chat me up to discuss your project or just to say hi</h5>
 
-                <form id="myForm" action="https://formspree.io/f/mqkglojz" method="POST">
+                <form id="myForm" action="https://formspree.io/f/mqkglojz" method="POST" autocomplete="off">
                     <div>
-                        <input type="text" name="name" placeholder="NAME" id="name" />
+                        <input type="text" name="name" placeholder="NAME" id="name" required />
                     </div>
                     <div>
-                        <input type="email" name="_replyto" placeholder="EMAIL" id="email" />
+                        <input type="email" name="_replyto" placeholder="EMAIL" id="email" required />
                     </div>
                     <div>
-                        <textarea name="message" id="message" cols="1" rows="1" placeholder="MESSAGE"></textarea>
+                        <textarea name="message" id="message" cols="1" rows="5" placeholder="MESSAGE" required></textarea>
                     </div>
                     <input type="text" name="_gotcha" style="display:none" />
                     <div>
