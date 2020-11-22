@@ -70,6 +70,10 @@ img{
     width: 90%;
 }
 
+#navbarNavAltMarkup a:hover {
+    color: #20a4be;
+}
+
 /* ============================================= Intro =========================================================== */
 #introDiv{
     margin-top: 100px;
@@ -203,7 +207,7 @@ form input, form textarea{
 form input:focus, form textarea:focus{
     outline: none;
     color: whitesmoke;
-    border-bottom: 1px solid #20A2B8;
+    border-bottom: 1px solid #e8fbff;
 }
 
 /* ======================================================= Footer ================================================================ */
